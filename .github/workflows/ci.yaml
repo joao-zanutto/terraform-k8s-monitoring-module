@@ -1,0 +1,8 @@
+name: Terraform Modules CI
+
+on:
+  push:
+
+jobs:
+  validate:
+    uses: joao-zanutto/shared-workflows/.github/workflows/terraform.yaml
