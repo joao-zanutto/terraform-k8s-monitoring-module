@@ -5,4 +5,4 @@ on:
 
 jobs:
   validate:
-    uses: joao-zanutto/shared-workflows/.github/workflows/terraform.yaml
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-validate.yaml
