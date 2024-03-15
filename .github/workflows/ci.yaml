@@ -9,3 +9,4 @@ jobs:
 
   checkov:
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-checkov.yaml@main
+
