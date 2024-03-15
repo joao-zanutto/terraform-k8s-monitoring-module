@@ -6,3 +6,6 @@ on:
 jobs:
   validate:
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-validate.yaml@main
+
+  checkov:
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-checkov.yaml@main
