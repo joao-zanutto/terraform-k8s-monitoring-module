@@ -11,4 +11,3 @@ jobs:
     permissions:
       security-events: write
     uses: joao-zanutto/shared-workflows/.github/workflows/tf-checkov.yaml@main
-
