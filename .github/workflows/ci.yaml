@@ -1,13 +1,24 @@
 name: Terraform Modules CI
 
 on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "**.tf"
+      - ".tflint.hcl"
+      - "README.md"
   push:
+    branches: [main]
+    paths:
+      - "**.tf"
+      - ".tflint.hcl"
+      - "README.md"
+  
+permissions:
+  security-events: write
+  contents: write
+  pull-requests: write
 
 jobs:
-  validate:
-    uses: joao-zanutto/shared-workflows/.github/workflows/tf-validate.yaml@main
-
-  checkov:
-    permissions:
-      security-events: write
-    uses: joao-zanutto/shared-workflows/.github/workflows/tf-checkov.yaml@main
+  ci-workflow:
+    uses: joao-zanutto/shared-workflows/.github/workflows/tf-ci.yaml@main
