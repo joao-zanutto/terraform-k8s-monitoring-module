@@ -6,6 +6,7 @@ resource "helm_release" "monitoring_stack" {
   version    = "57"
 }
 
+
 resource "kubernetes_namespace" "monitoring" {
   metadata {
     name = var.namespace
